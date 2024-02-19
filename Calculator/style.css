@@ -1,0 +1,88 @@
+* {
+	position: relative;
+}
+body {
+	font-family: Helvetica, sans-serif;
+	text-align: center;
+	letter-spacing: 0.5em;
+	text-transform: uppercase;
+	height: 100vh;
+	color: aliceblue;
+}
+h1 {
+	font-size: 3rem;
+	line-height: 3rem;
+	margin: 3%;
+}
+#wrapper {
+	letter-spacing: 0em;
+	background: rgb(103, 103, 103);
+	width: 60%;
+	height: 80vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	margin: 0 auto;
+	border-radius: 10px;
+	min-height: 620px;
+	overflow: hidden;
+}
+.output {
+	margin: 0 auto;
+	width: 80%;
+	background: rgba(0, 0, 0, 0.1);
+	border-radius: 10px;
+}
+.output hr {
+	opacity: 0.1;
+}
+.output div {
+	width: 80%;
+	font-size: 2rem;
+	line-height: 2;
+	text-align: right;
+	margin: 0 auto;
+}
+
+#btnGroup {
+	margin: 0 auto;
+	width: 80%;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(15%, 1fr));
+	align-items: initial;
+	height: 100%;
+	min-height: 300px;
+	gap: 3%;
+	padding: 3%;
+}
+.btn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 1px solid #000;
+	border-radius: 10px;
+	cursor: pointer;
+}
+.row-2 {
+	grid-area: 3/4/5/5;
+}
+@media screen and (max-width: 768px) {
+	#wrapper {
+		width: 80%;
+	}
+	.output {
+		width: 95%;
+	}
+	.output div {
+		width: 90%;
+	}
+	.btnGroup {
+		margin: 0 auto;
+		width: 95%;
+	}
+}
+@media screen and (max-width: 576px) {
+	#wrapper {
+		width: 95%;
+	}
+}
